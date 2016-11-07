@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Drag by shengxihu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Drag</h1>
+      <h2 class="project-tagline">An image uploader powered by Nodejs, Electron，Vuejs.</h2>
+      <a href="https://github.com/shengxihu/Drag" class="btn">View on GitHub</a>
+      <a href="https://github.com/shengxihu/Drag/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/shengxihu/Drag/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h3>
+<a id="什么是drag" class="anchor" href="#%E4%BB%80%E4%B9%88%E6%98%AFdrag" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>什么是Drag?</h3>
+
+<p>这是一个支持拖拽上传图片到图床的桌面客户端，国内使用七牛，国外使用cloudinary。你可以使用拖拽或点击上传的方式将本地图片上传到在线图床并点击即可复制链接。</p>
+
+<h3>
+<a id="如何使用" class="anchor" href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>如何使用</h3>
+
+<h4>
+<a id="获取账户信息" class="anchor" href="#%E8%8E%B7%E5%8F%96%E8%B4%A6%E6%88%B7%E4%BF%A1%E6%81%AF" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>获取账户信息</h4>
+
+<p>1.国内图床</p>
+
+<ul>
+<li><p>注册<a href="https://portal.qiniu.com/">七牛</a></p></li>
+<li><p>获取<a href="https://portal.qiniu.com/user/key">Access/Secret Key</a></p></li>
+</ul>
+
+<p>1.国外图床</p>
+
+<ul>
+<li><p>注册：<a href="http://cloudinary.com/">Cloudinary</a></p></li>
+<li><p>获取：<a href="https://cloudinary.com/console">Cloud name/API Key/API Secret</a></p></li>
+</ul>
+
+<h4>
+<a id="配置" class="anchor" href="#%E9%85%8D%E7%BD%AE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>配置</h4>
+
+<p><img src="http://res.cloudinary.com/da4uixfcu/image/upload/v1478521792/zozmt1yaicubyeeh8ypz.png" alt="配置"></p>
+
+<p>备注：</p>
+
+<ul>
+<li><p>七牛资源域名即存储资源的外链默认域名</p></li>
+<li><p>BucketName即存储资源列表的名称</p></li>
+</ul>
+
+<h4>
+<a id="管理" class="anchor" href="#%E7%AE%A1%E7%90%86" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>管理</h4>
+
+<p>管理界面暂时只支持国内图床完整文件名搜索<g-emoji alias="mag" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f50d.png" ios-version="6.0">🔍</g-emoji>.</p>
+
+<h3>
+<a id="开发相关" class="anchor" href="#%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>开发相关</h3>
+
+<h4>
+<a id="如何开发" class="anchor" href="#%E5%A6%82%E4%BD%95%E5%BC%80%E5%8F%91" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>如何开发</h4>
+
+<ul>
+<li><p>克隆项目<a href="https://github.com/shengxihu/Drag">Drag</a></p></li>
+<li><p>安装依赖：<code>npm install</code></p></li>
+<li><p>开发：<code>npm run dev</code></p></li>
+<li><p>启动：<code>npm run start</code></p></li>
+<li><p>打包应用：npm run package</p></li>
+</ul>
+
+<h4>
+<a id="技术架构" class="anchor" href="#%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>技术架构</h4>
+
+<ul>
+<li>应用环境：<a href="http://electron.atom.io">Electron</a>
+</li>
+<li>前端：<a href="https://vuejs.org">Vuejs</a>,<a href="http://element.eleme.io/#/">Element</a>
+</li>
+<li>后端：Nodejs</li>
+<li>数据本地化：nconf读取本地json配置文件，localstorage数据持久化</li>
+</ul>
+
+<h3>
+<a id="项目人员" class="anchor" href="#%E9%A1%B9%E7%9B%AE%E4%BA%BA%E5%91%98" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>项目人员</h3>
+
+<p>产品构思与设计：<a href="https://github.com/neo1218">neo1218</a>
+开发：<a href="https://github.com/shengxihu">no1024</a></p>
+
+<h3>
+<a id="相关链接" class="anchor" href="#%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>相关链接</h3>
+
+<p><a href="https://github.com/Muxi-Studio">木犀团队</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/shengxihu/Drag">Drag</a> is maintained by <a href="https://github.com/shengxihu">shengxihu</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
