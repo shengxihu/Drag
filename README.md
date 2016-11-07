@@ -1,41 +1,47 @@
-# electron-vue-webpack
-Got tired finding Electron/Vue2/Webpack2 templates with fancy add-ons you don't really need?
+# Drag
+A desktop image loader powered by Vue/Electron/Node
 
-Give a try to this minimal template with very few dependencies for quick development and prototyping.
-
-![w10 sample](https://cloud.githubusercontent.com/assets/11739632/19222705/0f8c55fc-8e5f-11e6-97fa-0d3943f43358.png)
+![sample](http://res.cloudinary.com/da4uixfcu/image/upload/v1478526023/lg0kvyzpdzurlvrsdn0i.png)
 
 ## Install
 ``` bash
 # Clone the repository once
-$ git clone https://github.com/pastahito/electron-vue-webpack
+$ git clone https://github.com/shengxihu/Drag/
 
 # Go into the repository (rename it as you wish)
-$ cd electron-vue-webpack
+$ cd Drag
 
 # Install the 7 only dependencies once
 $ npm install
 ```
 
-## Usage
+## Dev
 Run this two commands in two different prompts to start developing with hot reloading.
 ``` bash
 # Webpack builds once and watches to apply only the changes
 $ npm run dev
 
 # Start you electron app
-$ npm start
+$ npm run start
+
+# Package you electron app
+$ npm run package
 ```
 
-## What's included
-You don't really need more stuff to start playing around with Electron, Vue 2 and Webpack 2.
+## Usage
+You don't really need more stuff to upload you image to Image Hosting，just drag it!
 
-- Support for .vue (single file components). Use them with HTML & ES6 & CSS.
-- No Express, neither Babel is needed (more than 97% ES6 is supported in Node/Electron).
+- input you account details.
+- drag into the drag area.
+- wait a little while
+
+## Warning
+
+- it use express to run a local server,so if you want to use,close your vpn or adjust it to national pattern.
 
 ## Template structure
 ```
-├── electron-vue-webpack/               # Your project's name
+├── Drag/               # Your project's name
 
     ├── app/
 
@@ -44,17 +50,15 @@ You don't really need more stuff to start playing around with Electron, Vue 2 an
         ├── src/
 
             ├── assets/                 # Images go here
-                ├── electron.png
-                ├── vue.png
-                ├── webpack.png
-
+                
             ├── components/             # Webcomponents go here
-                ├── Hello.vue
 
-            ├── App.vue                 # Vue app. Your global css can go here
+            ├── Main.vue                # Vue app. Your global css can go here
+            ├── Menue.vue               # Vue app. Your global css can go here
             ├── entry.js                # App entry. Your global js can go here
 
-        ├── index.html                  # Single Page Application HTML, it only uses build's files
+        ├── mian.html                  # Single Page Application HTML, it only uses build's files
+        ├── menue.html                  # Single Page Application HTML, it only uses build's files
 
     ├── main.js                         # Electron app init
     ├── package.json
