@@ -1,7 +1,7 @@
 # Drag
 A desktop image loader powered by Vue/Electron/Node
 
-![sample](http://res.cloudinary.com/da4uixfcu/image/upload/v1478526023/lg0kvyzpdzurlvrsdn0i.png)
+<img src="http://res.cloudinary.com/da4uixfcu/image/upload/v1478526931/jddyy8yyuchd4ur0i9ep.png" alt="drag home" style="height:420px;">
 
 ## Install
 ``` bash
